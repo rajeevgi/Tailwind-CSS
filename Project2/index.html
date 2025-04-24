@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TailwindCSS : Font and Sizing</title>
     <!-- <link href="output.css" rel="stylesheet"> -->
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -13,62 +13,177 @@
     </div>
 
     <!-- List of Font-family -->
-     <p class="mb-2 mt-2 font-bold">Font-family</p>
-     <div class="flex justify-center">
-         <ul>
+    <p class="mb-2 mt-2 font-bold">Font-family</p>
+    <div class="flex justify-center">
+        <ul>
             <li class="font-sans hover:font-sans cursor-pointer">Hello Folks in Sans!</li>
             <li class="font-serif hover:font-serif cursor-pointer">Hello Folks in serif!</li>
             <li class="font-mono hover:font-mono cursor-pointer">Hello Folks in mono!</li>
-         </ul>
-     </div>
+        </ul>
+    </div>
 
-     <!-- List of Font-size -->
-      <p class="mb-2 mt-2 font-bold">Font-size</p>
-      <div class="flex justify-center">
+    <!-- List of Font-size -->
+    <p class="mb-2 mt-2 font-bold">Font-size</p>
+    <div class="flex justify-center">
         <ul>
             <li class="text-red-700 text-xs">This is size1</li>
             <li class="text-green-800 text-xl">This is size2</li>
             <li class="text-blue-700 text-2xl">This is size3</li>
             <li class="text-yellow-500 text-3xl">This is size4</li>
         </ul>
-      </div>
+    </div>
 
-      <!-- Font Smoothing , Font Style-->
-       <p class="mb-2 mt-2 font-bold">Font Smoothing, Style</p>
-       <p class="subpixel-antialiased italic hover:not-italic hover:antialiased bg-slate-700">This quick brown fox jumps over the lazy dog.</p>
-       <p class="antialiased hover:italic hover:subpixel-antialiased bg-slate-500">This quick brown fox jumps over the lazy dog.</p>
+    <!-- Font Smoothing , Font Style-->
+    <p class="mb-2 mt-2 font-bold">Font Smoothing, Style</p>
+    <p class="subpixel-antialiased italic hover:not-italic hover:antialiased bg-slate-700">This quick brown fox jumps
+        over the lazy dog.</p>
+    <p class="antialiased hover:italic hover:subpixel-antialiased bg-slate-500">This quick brown fox jumps over the lazy
+        dog.</p>
 
-       <!-- Font Weight -->
-        <p class="mb-2 mt-2 font-bold">Font Weight</p>
-        <p class="font-thin">This quick brown fox jumps over the lazy dog (thin)</p>
-        <p class="font-extralight">This quick brown fox jumps over the lazy dog (extralight)</p>
-        <p class="font-normal">This quick brown fox jumps over the lazy dog (normal)</p>
-        <p class="font-medium">This quick brown fox jumps over the lazy dog (medium)</p>
-        <p class="font-semibold">This quick brown fox jumps over the lazy dog (semi-bold)</p>
-        <p class="font-bold">This quick brown fox jumps over the lazy dog (bold)</p>
+    <!-- Font Weight -->
+    <p class="mb-2 mt-2 font-bold">Font Weight</p>
+    <p class="font-thin">This quick brown fox jumps over the lazy dog (thin)</p>
+    <p class="font-extralight">This quick brown fox jumps over the lazy dog (extralight)</p>
+    <p class="font-normal">This quick brown fox jumps over the lazy dog (normal)</p>
+    <p class="font-medium">This quick brown fox jumps over the lazy dog (medium)</p>
+    <p class="font-semibold">This quick brown fox jumps over the lazy dog (semi-bold)</p>
+    <p class="font-bold">This quick brown fox jumps over the lazy dog (bold)</p>
 
-        <!-- Font Variant Numeric -->
-         <p class="mb-2 mt-2 font-bold">Font Variant Numeric</p>
-         <p class="mx-2 ordinal">1st</p>
-         <p class="mx-2 slashed-zero">0</p>
-         <p class="mx-2 lining-nums">1234567890</p>
-         <p class="mx-2 oldstyle-nums">1234567890</p>
-         <p class="mx-2 proportional-nums">12121</p>       
-         <p class="mx-2 proportional-nums">90909</p>
-         <p class="mx-2 tabular-nums">12121</p>
-         <p class="mx-2 tabular-nums">90909</p>
-         <p class="mx-2 diagonal-fractions">Diagonal Fractions 1/2 1/3 1/4</p>       
-         <p class="mx-2 stacked-fractions">Stacked Fractions 1/2 1/3 1/4</p>   
-         
-         <!-- Letter Spacing -->
-          <p class="mb-2 mt-2 font-bold">Letter Spacing</p>
-          <p class="mx-2 tracking-tighter">This quick brown fox jumps over the lazy dog</p>
-          <p class="mx-2 tracking-tight">This quick brown fox jumps over the lazy dog</p>
-          <p class="mx-2 tracking-normal">This quick brown fox jumps over the lazy dog</p>
-          <p class="mx-2 tracking-wide">This quick brown fox jumps over the lazy dog</p>
-          <p class="mx-2 tracking-wider">This quick brown fox jumps over the lazy dog</p>
-          <p class="mx-2 tracking-widest">This quick brown fox jumps over the lazy dog</p>
+    <!-- Font Variant Numeric -->
+    <p class="mb-2 mt-2 font-bold">Font Variant Numeric</p>
+    <p class="mx-2 ordinal">1st</p>
+    <p class="mx-2 slashed-zero">0</p>
+    <p class="mx-2 lining-nums">1234567890</p>
+    <p class="mx-2 oldstyle-nums">1234567890</p>
+    <p class="mx-2 proportional-nums">12121</p>
+    <p class="mx-2 proportional-nums">90909</p>
+    <p class="mx-2 tabular-nums">12121</p>
+    <p class="mx-2 tabular-nums">90909</p>
+    <p class="mx-2 diagonal-fractions">Diagonal Fractions 1/2 1/3 1/4</p>
+    <p class="mx-2 stacked-fractions">Stacked Fractions 1/2 1/3 1/4</p>
 
-          
+    <!-- Letter Spacing -->
+    <p class="mb-2 mt-2 font-bold">Letter Spacing</p>
+    <p class="mx-2 tracking-tighter">This quick brown fox jumps over the lazy dog</p>
+    <p class="mx-2 tracking-tight">This quick brown fox jumps over the lazy dog</p>
+    <p class="mx-2 tracking-normal">This quick brown fox jumps over the lazy dog</p>
+    <p class="mx-2 tracking-wide">This quick brown fox jumps over the lazy dog</p>
+    <p class="mx-2 tracking-wider">This quick brown fox jumps over the lazy dog</p>
+    <p class="mx-2 tracking-widest">This quick brown fox jumps over the lazy dog</p>
+
+    <!-- Line Clamp  -->
+    <p class="font-bold">Line Clamp Example</p>
+    <article>
+        <time>April 23, 2025</time>
+        <h2>Boost your conversion rate</h2>
+        <p class="line-clamp-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptas tempora
+            blanditiis laboriosam voluptatem reprehenderit illo illum excepturi unde. Modi pariatur repudiandae cum.
+            Nulla velit, deserunt ratione earum error quam.</p>
+        <div>
+            <img src="logo" alt="logo">
+            Rajeev Gupta
+        </div>
+    </article>
+
+    <!-- Line Height -->
+    <p class="font-bold">Line Height Example</p>
+    <ul>
+        <li>
+            <p class="font-semibold">Leading-Normal</p>
+            <p class="leading-normal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora eius in magni
+                vitae exercitationem, dignissimos non nisi quia. Perferendis debitis vero placeat id iusto dolores
+                accusantium soluta nobis enim magnam!</p><br>
+            <hr>
+        </li>
+        <li>
+            <p class="font-semibold">Leading-relaxed</p>
+            <p class="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam deleniti voluptas
+                suscipit officiis. Suscipit, natus porro beatae provident deserunt dolores! Maxime atque blanditiis nam
+                temporibus. Eaque nulla sit hic commodi.</p><br>
+            <hr>
+        </li>
+        <li>
+            <p class="font-semibold">Leading-loose</p>
+            <p class="leading-loose">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae officiis exercitationem expedita
+                deserunt perferendis, inventore tempore aliquam, veniam ducimus nemo in nisi ab. Vitae velit soluta ad
+                officiis, eius exercitationem.
+            </p><br>
+            <hr>
+        </li>
+        <li>
+            <p class="font-semibold">Leading-3</p>
+            <p class="leading-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex voluptas doloremque,
+                aliquid modi quod excepturi minus omnis odio laborum consequatur praesentium nulla tempora accusamus
+                blanditiis nisi et natus id sint?</p><br>
+            <hr>
+        </li>
+        <li>
+            <p class="font-semibold">Leading-4</p>
+            <p class="leading-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quas commodi nesciunt
+                reprehenderit, sit architecto accusamus nihil. Quisquam fuga, earum nulla reprehenderit debitis officiis
+                explicabo. Officia, aspernatur rem! Fugiat, ab.</p><br>
+            <hr>
+        </li>
+        <li>
+            <p class="font-semibold">Leading-5</p>
+            <p class="leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sequi aliquid ab
+                accusantium debitis laborum vel inventore molestias saepe unde quas dicta, optio quidem dolorem facere.
+                Hic necessitatibus quos explicabo.</p><br>
+            <hr>
+        </li>
+        <li>
+            <p class="font-semibold">Leading-6</p>
+            <p class="leading-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores odit architecto
+                explicabo reiciendis pariatur ipsum molestiae rem repellendus dolorum, porro repudiandae sit, assumenda
+                earum dolore neque enim eum vel? Reiciendis.</p><br>
+            <hr>
+        </li>
+    </ul>
+
+    <!-- List Style Position -->
+    <p class="font-bold">List Style Position</p>
+    <div class="flex">
+        <p>List Inside Example</p>
+        <ul class="list-disc list-inside mx-5">
+            <li>5 cups chopped Porcini Mushrooms.</li>
+            <li><span class="diagonal-fractions">1/2</span> cup of olive oil.</li>
+            <li>3lb of celery</li>
+        </ul>
+        <p>List Outside Example</p>
+        <ul class="list-disc list-outside mx-5">
+            <li>5 cups chopped Porcini Mushrooms.</li>
+            <li><span class="diagonal-fractions">1/2</span> cup of olive oil.</li>
+            <li>3lb of celery</li>
+        </ul>
+    </div>
+    <br><hr>
+    <!-- List Style Type -->
+    <p class="flex justify-center font-bold">List Style Type</p>
+    <div class="flex justify-center">
+        <ul class="list-disc">
+            <li class="list-none font-bold">Disc Type</li>
+            <li>Now this is a story all about how, my life got flipped-turned upside down</li>
+            <li>And I'd like to take a minute just sit right there</li>
+            <li>I'll tell you how I became the prince of a town called Bel-Air</li>
+        </ul>
+    </div><br><hr>
+    <div class="flex justify-center">
+        <ul class="list-decimal">
+            <li class="list-none font-bold">Decimal Type</li>
+            <li>Now this is a story all about how, my life got flipped-turned upside down</li>
+            <li>And I'd like to take a minute just sit right there</li>
+            <li>I'll tell you how I became the prince of a town called Bel-Air</li>
+        </ul>
+    </div><br><hr>
+    <div class="flex justify-center">
+        <ul class="list-none">
+            <li class="list-none font-bold">None Type</li>
+            <li>Now this is a story all about how, my life got flipped-turned upside down</li>
+            <li>And I'd like to take a minute just sit right there</li>
+            <li>I'll tell you how I became the prince of a town called Bel-Air</li>
+        </ul>
+    </div><br><hr>
+
 </body>
 </html>
