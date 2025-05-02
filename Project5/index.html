@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS : Margins, Borders and Padding</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <h1 class="text-red-800">Hello from user!</h1>
+    <p class="font-bold text-center mt-5">Margin Examples</p>
+    <div class="flex-col border">
+        <div class="mt-6 text-center">Margin Top : 6px</div>
+        <div class="mr-8 text-center">Margin Right : 8px</div>
+        <div class="ml-4 text-center">Margin Left : 4px</div>
+        <div class="mb-2 text-center">Margin Bottom : 2px</div>
+    </div>
+    <div class="flex-col border">
+        <div class="mx-2 text-center">Margin Horizontally (left and right) : 2px</div>
+        <div class="my-2 text-center">Margin Vertically (Top and Bottom) : 2px</div>
+    </div>
+    <div class="flex-col border">
+        <p class="font-bold text-center mb-3">Using Logical Properties</p>
+        <div dir="ltr" class="text-center">
+            <div class="ms-8">Margin-start : 8px</div>
+            <div class="me-8">Margin-end : 8px</div>
+        </div>
+        <div dir="rtl" class="text-center">
+            <div class="ms-8">Margin-start : 8px</div>
+            <div class="me-8">Margin-end : 8px</div>
+        </div>
+    </div><br><br>
+
+    <p class="font-bold text-center mt-2">Padding Examples</p>
+    <div class="flex-col border">
+        <div class="pt-6 text-center">Padding-top : 6px</div>
+        <div class="pl-8 text-center">Padding-left : 8px</div>
+        <div class="pr-4 text-center">Padding-right : 4px</div>
+        <div class="pb-2 text-center">Padding-bottom : 2px</div>
+    </div>
+    <div class="flex-col border">
+        <p class="font-bold text-center">Adding Horizontal/Vertical Padding</p>
+        <div class="px-8 text-center">Horizontal Padding (right and left) : 8px</div>
+        <div class="py-8 text-center">Vertical Padding (Top and bottom) : 8px</div>
+    </div>
+    <div class="flex-col border">
+        <p class="font-semibold text-center">Using Logical Properties</p>
+        <div dir="ltr" class="text-center">
+            <div class="ps-8">Padding-start : 8px</div>
+            <div class="pe-8">Padding-end : 8px</div>
+        </div>
+        <div dir="rtl" class="text-center">
+            <div class="ps-8">Padding-start : 8px</div>
+            <div class="pe-8">Padding-end : 8px</div>
+        </div>
+    </div><br><br>
+
+    <p class="font-bold text-center">Spacing : Space-between</p>
+    <div class="border">
+        <div class="flex space-x-20">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </div>
+</body>
+</html>
