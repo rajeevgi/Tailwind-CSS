@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
+    <!-- Margins -->
     <h1 class="text-red-800">Hello from user!</h1>
     <p class="font-bold text-center mt-5">Margin Examples</p>
     <div class="flex-col border">
@@ -31,6 +32,7 @@
         </div>
     </div><br><br>
 
+    <!-- Padding -->
     <p class="font-bold text-center mt-2">Padding Examples</p>
     <div class="flex-col border">
         <div class="pt-6 text-center">Padding-top : 6px</div>
@@ -55,6 +57,7 @@
         </div>
     </div><br><br>
 
+    <!-- Spacing -->
     <p class="font-bold text-center">Spacing : Space-between</p>
     <div class="flex flex-col border p-4">
         <div class="flex justify-center space-x-4">
@@ -75,5 +78,62 @@
             <div class="bg-gray-200 p-2 rounded">3</div>
         </div>
     </div>
+
+    <!-- Border -->
+    <p class="font-bold text-center">Borders Example</p>
+    <div class="flex-col">
+        <div class="border   border-sky-500 mb-2">Hello border</div>
+        <div class="border-2 border-sky-500 mb-2">Hello, border-2</div>
+        <div class="border-4 border-sky-500 mb-2">Hello, border-4</div>
+        <div class="border-8 border-sky-500 mb-2">Hello, border-8</div>
+    </div>
+
+    <p class="font-bold text-center">Borders : Individual Sides</p>
+    <div class="columns-1 flex-col">
+        <div class="border-t-4 border-indigo-500 mb-2">Border-top : 4px</div><hr>
+        <div class="border-r-4 border-indigo-500 mb-2">Border-right : 4px</div><hr>
+        <div class="border-b-4 border-indigo-500 mb-2">Border-bottom : 4px</div><hr>
+        <div class="border-l-4 border-indigo-500 mb-2">Border-left : 4px</div>
+    </div>
+
+    <p class="font-bold text-center">Horizontal and Vertical Sides</p>
+    <div class="border-x-4 border-indigo-500 mb-4">Horizontal (left and Right)</div>
+    <div class="border-y-4 border-indigo-500">Vertical (Top and Bottom)</div>
+
+    <p class="font-bold text-center">Between Elements</p>
+    <div class="divide-y divide-slate-700 w-40 h-40 text-center">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+    </div>
+
+    <p class="font-bold text-center">Using Logical properties</p>
+    <div dir="ltr" class="text-center">
+        <div class="border-s-4 border-indigo-500">Border-s-4</div>
+    </div>
+    <div dir="rtl" class="text-center">
+        <div class="border-s-4 border-indigo-500">Border-s-4</div>
+    </div>
+
+    <!-- Border-radius -->
+     <hr><br>
+     <p class="font-bold text-center">Border Radius Examples</p>
+     <h4 class="font-semibold text-center">Rounded Corners</h4>
+    <ul class="flex items-end justify-center">
+        <li class="m-4">
+            <div class="w-52 h-52 bg-red-600 text-white flex items-center justify-center rounded">
+                Rounded Corners
+            </div>
+        </li>
+        <li class="m-4">
+            <div class="w-24 h-24 bg-green-600 text-white flex items-center justify-center rounded-md">Rounded md</div>
+        </li>
+        <li class="m-4">
+            <div class="w-24 h-24 bg-blue-500 text-white flex items-center justify-center rounded-lg">Rounded lg</div>
+        </li>
+        <li class="m-4">
+            <div class="w-24 h-24 bg-teal-900 text-white flex items-center justify-center rounded-full">Rounded Full</div>
+        </li>
+    </ul>
 </body>
 </html>
