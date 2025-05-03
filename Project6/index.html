@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS : Flexbox & Grid</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <h1 class="text-red-500 text-center">Hello, Flexbox</h1>
+
+    <p class="font-semibold text-center mt-3">Set the flex-basis</p>
+    <div class="flex flex-row text-center">
+        <div class="w-2 h-8 border-2 rounded-md bg-red-600 basis-1/4">01</div>
+        <div class="w-2 h-8 border-4 rounded-lg bg-green-600 basis-1/4">02</div>
+        <div class="w-2 h-8 border-6 rounded-xl bg-indigo-500 basis-1/2">03</div>
+    </div>
+
+    <p class="font-semibold text-center mt-5">Flex-direction</p>
+    <ul>
+        <li>
+            <p class="font-semibold text-center">Flex-direction : row</p>
+            <div class="flex flex-row items-center justify-center mx-2">
+                <div class="w-20 h-20 bg-red-500 flex items-center justify-center m-2">01</div>
+                <div class="w-20 h-20 bg-green-500 flex items-center justify-center m-2">02</div>
+                <div class="w-20 h-20 bg-blue-500 flex items-center justify-center m-2">03</div>
+            </div>
+        </li>
+        <li>
+            <p class="font-semibold text-center">flex-direction : row-reverse</p>
+            <div class="flex flex-row-reverse items-center justify-center mx-2">
+                <div class="w-20 h-20 bg-red-500 flex items-center justify-center m-2">01</div>
+                <div class="w-20 h-20 bg-green-500 flex items-center justify-center m-2">02</div>
+                <div class="w-20 h-20 bg-blue-500 flex items-center justify-center m-2">03</div>
+            </div>
+        </li>
+        <li>
+            <p class="font-semibold text-center">flex-direction : col</p>
+            <div class="flex flex-col items-center justify-center mx-2">
+                <div class="w-20 h-20 bg-red-500 flex items-center justify-center m-2">01</div>
+                <div class="w-20 h-20 bg-green-500 flex items-center justify-center m-2">02</div>
+                <div class="w-20 h-20 bg-blue-500 flex items-center justify-center m-2">03</div>   
+            </div>
+        </li>
+        <li>
+            <p class="font-semibold text-center">flex-direction : col-reverse</p>
+            <div class="flex flex-col-reverse items-center justify-center mx-2">
+                <div class="w-20 h-20 bg-red-500 flex items-center justify-center m-2">01</div>
+                <div class="w-20 h-20 bg-green-500 flex items-center justify-center m-2">02</div>
+                <div class="w-20 h-20 bg-blue-500 flex items-center justify-center m-2">03</div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
