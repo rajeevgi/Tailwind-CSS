@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TailwindCSS : Margins, Borders and Padding</title>
     <link rel="stylesheet" href="output.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 <body>
     <!-- Margins -->
@@ -181,6 +182,7 @@
     </ul>
     <hr><br>
 
+    <!-- Border color -->
     <h2 class="font-bold text-center">Border Color</h2>
     <p class="font-semibold text-center">Setting the border color</p>
     <div class="flex items-center justify-center">
@@ -197,15 +199,121 @@
     <p class="font-semibold text-center mt-2">Individual Sides</p>
     <div class="flex items-center justify-center">
         <div class="border-4 border-indigo-200 border-t-indigo-500 m-4">Border top indigo 500</div>
-        <div class="border-r-4 border-indigo-200 m-4 border-r-rose-500">Border right rose 500</div>
-        <div class="border-b-4 border-indigo-200 m-4 border-b-gray-500">Border bottom gray 500</div>
-        <div class="border-l-4 border-indigo-200 m-4 border-l-green-500">Border left green 500</div>
+        <div class="border-4 border-indigo-200 m-4 border-r-rose-500">Border right rose 500</div>
+        <div class="border-4 border-indigo-200 m-4 border-b-gray-500">Border bottom gray 500</div>
+        <div class="border-4 border-indigo-200 m-4 border-l-green-500">Border left green 500</div>
     </div>
 
     <p class="font-semibold text-center">Horizontal and Vertical Sides</p>
     <div class="flex items-center justify-center">
-        <div class="border-y-4 border-indigo-200 border-y-indigo-900 m-4">Border Vertical (Top and Bottom)</div>
-        <div class="border-x-4 border-indigo-200 border-x-indigo-900 m-4">Border Horizontal (Left and Right)</div>
+        <div class="border-4 border-indigo-200 border-y-indigo-900 m-4">Border Vertical (Top and Bottom)</div>
+        <div class="border-4 border-indigo-200 border-x-indigo-900 m-4">Border Horizontal (Left and Right)</div>
+    </div>
+    <hr><br>
+
+    <!-- Border style -->
+    <h2 class="font-bold text-center">Border Style Examples</h2>
+    <p class="font-semibold text-center">Setting the border</p>
+    <div class="flex items-center justify-center">
+        <div class="border-solid border-2 border-sky-500 m-4">Border Solid</div>
+        <div class="border-2 border-dashed  border-sky-500 m-4">Border Dashed</div>
+        <div class="border-2 border-dotted border-sky-500 m-4">Border Dotted</div>
+        <div class="border-2 border-double  border-sky-500 m-4">Border Double</div>
+    </div>
+    <hr><br>
+
+    <!-- Divide width -->
+    <h2 class="font-bold text-center">Divide width</h2>
+    <p class="font-semibold text-center">Add Borders Between Horizontal children</p>
+    <div class="bg-gray-800 text-gray-300 flex items-center justify-center">
+        <div class="grid grid-cols-3 divide-x">
+            <div>01</div> 
+            <div>02</div>
+            <div>03</div>
+        </div>
+    </div>
+
+    <p class="font-semibold text-center mt-5">Add Borders Between Vertical children</p>
+    <div class="bg-gray-800 text-gray-300 flex items-center justify-center">
+        <div class="grid grid-rows-3 divide-y">
+            <div>01</div> 
+            <div>02</div>
+            <div>03</div>
+        </div>
+    </div>
+
+    <p class="font-semibold text-center mt-5">Reversing children order</p>
+    <div class="bg-gray-800 text-gray-300 flex items-center justify-center">
+        <div class="flex flex-col-reverse divide-y divide-y-reverse">
+            <div>01</div>
+            <div>02</div>
+            <div>03</div>
+        </div>
+    </div>
+    <hr><br>
+
+    <!-- Divide Color -->
+    <h2 class="font-bold text-center">Divide Color</h2>
+    <p class="font-semibold text-center">Setting the divide color</p>
+    <div class="bg-gray-800 text-gray-300 flex items-center justify-center">
+        <div class="divide-y divide-blue-500">
+            <div>01</div>
+            <div>02</div>
+            <div>03</div>
+        </div>
+    </div>
+
+    <p class="font-semibold text-center">Changing the opacity</p>
+    <div class="bg-gray-800 text-gray-300 flex items-center justify-center">
+        <div class="divide-y-4 divide-slate-400/50">
+            <div>01</div>
+            <div>02</div>
+            <div>03</div>
+        </div>
+    </div>
+    <hr><br>
+
+    <!-- Divide Style -->
+    <h2 class="font-bold text-center">Divide Style</h2>
+    <p class="font-semibold text-center">Set the divide Style</p>
+    <div class="bg-gray-800 text-gray-300 flex items-center justify-center">
+        <ul>
+            <li>
+                <div class="divide-y divide-dashed">
+                    <div>01</div>
+                    <div>02</div>
+                    <div>03</div>
+                </div>
+            </li>
+            <li>
+                <div class="divide-y divide-solid">
+                    <div>01</div>
+                    <div>02</div>
+                    <div>03</div>
+                </div>
+            </li>
+            <li>
+                <div class="divide-y divide-dotted">
+                    <div>01</div>
+                    <div>02</div>
+                    <div>03</div>
+                </div>
+            </li>
+            <li>
+                <div class="divide-y divide-double">
+                    <div>01</div>
+                    <div>02</div>
+                    <div>03</div>
+                </div>
+            </li>
+            <li>
+                <div class="divide-y divide-none">
+                    <div>01</div>
+                    <div>02</div>
+                    <div>03</div>
+                </div>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
