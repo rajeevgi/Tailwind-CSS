@@ -90,9 +90,12 @@
 
     <p class="font-bold text-center">Borders : Individual Sides</p>
     <div class="columns-1 flex-col">
-        <div class="border-t-4 border-indigo-500 mb-2">Border-top : 4px</div><hr>
-        <div class="border-r-4 border-indigo-500 mb-2">Border-right : 4px</div><hr>
-        <div class="border-b-4 border-indigo-500 mb-2">Border-bottom : 4px</div><hr>
+        <div class="border-t-4 border-indigo-500 mb-2">Border-top : 4px</div>
+        <hr>
+        <div class="border-r-4 border-indigo-500 mb-2">Border-right : 4px</div>
+        <hr>
+        <div class="border-b-4 border-indigo-500 mb-2">Border-bottom : 4px</div>
+        <hr>
         <div class="border-l-4 border-indigo-500 mb-2">Border-left : 4px</div>
     </div>
 
@@ -116,10 +119,10 @@
     </div>
 
     <!-- Border-radius -->
-     <hr><br>
-     <p class="font-bold text-center">Border Radius Examples</p>
-     <h4 class="font-semibold text-center">Rounded Corners</h4>
-    <ul class="flex items-end justify-center">
+    <hr><br>
+    <p class="font-bold text-center">Border Radius Examples</p>
+    <h4 class="font-semibold text-center">Rounded Corners</h4>
+    <ul class="flex items-center justify-center">
         <li class="m-4">
             <div class="w-52 h-52 bg-red-600 text-white flex items-center justify-center rounded">
                 Rounded Corners
@@ -132,8 +135,77 @@
             <div class="w-24 h-24 bg-blue-500 text-white flex items-center justify-center rounded-lg">Rounded lg</div>
         </li>
         <li class="m-4">
-            <div class="w-24 h-24 bg-teal-900 text-white flex items-center justify-center rounded-full">Rounded Full</div>
+            <div class="w-24 h-24 bg-teal-900 text-white flex items-center justify-center rounded-full">Rounded Full
+            </div>
         </li>
     </ul>
+
+    <p class="font-semibold text-center">Rounding Sides Separately</p>
+    <ul class="flex items-center justify-center">
+        <li class="m-4">
+            <div class="w-32 h-32 bg-red-500 text-white flex items-center justify-center rounded-t-lg">Rounded top large
+            </div>
+        </li>
+        <li class="m-4">
+            <div class="w-32 h-32 bg-blue-500 text-white flex items-center justify-center rounded-r-lg">Rounded Right
+                Large</div>
+        </li>
+        <li class="m-4">
+            <div class="w-32 h-32 bg-green-500 text-white flex items-center justify-center rounded-b-lg">Rounded Bottom
+                Large</div>
+        </li>
+        <li class="m-4">
+            <div class="w-32 h-32 bg-slate-500 text-white flex items-center justify-center rounded-l-lg">Rounded Left
+                Large</div>
+        </li>
+    </ul>
+
+    <p class="font-semibold text-center">Rounding Corners Separately</p>
+    <ul class="flex items-center justify-center">
+        <li class="m-4">
+            <div class="w-32 h-32 bg-green-500 text-white flex items-center justify-center rounded-tl-lg">Rounding Top
+                Left Corner</div>
+        </li>
+        <li class="m-4">
+            <div class="w-32 h-32 bg-blue-500 text-white flex items-center justify-center rounded-tr-lg">Rounding Top
+                Right Corner</div>
+        </li>
+        <li class="m-4">
+            <div class="w-32 h-32 bg-red-500 text-white flex items-center justify-center rounded-bl-lg">Rounding Bottom
+                Left Corner</div>
+        </li>
+        <li class="m-4">
+            <div class="w-32 h-32 bg-slate-500 text-white flex items-center justify-center rounded-br-lg">Rounding
+                Bottom Right Corner</div>
+        </li>
+    </ul>
+    <hr><br>
+
+    <h2 class="font-bold text-center">Border Color</h2>
+    <p class="font-semibold text-center">Setting the border color</p>
+    <div class="flex items-center justify-center">
+        <input type="text" class="border-2 border-rose-500" placeholder="Enter something">
+    </div>
+
+    <p class="font-semibold text-center mt-2">Changing the border opacity</p>
+    <div class="flex items-center justify-center">
+        <div class="border-4 border-indigo-500/100 m-4">500/100 Opacity</div>
+        <div class="border-4 border-indigo-500/75 m-4">500/75</div>
+        <div class="border-4 border-indigo-500/50 m-4">500/50</div>
+    </div>
+
+    <p class="font-semibold text-center mt-2">Individual Sides</p>
+    <div class="flex items-center justify-center">
+        <div class="border-4 border-indigo-200 border-t-indigo-500 m-4">Border top indigo 500</div>
+        <div class="border-r-4 border-indigo-200 m-4 border-r-rose-500">Border right rose 500</div>
+        <div class="border-b-4 border-indigo-200 m-4 border-b-gray-500">Border bottom gray 500</div>
+        <div class="border-l-4 border-indigo-200 m-4 border-l-green-500">Border left green 500</div>
+    </div>
+
+    <p class="font-semibold text-center">Horizontal and Vertical Sides</p>
+    <div class="flex items-center justify-center">
+        <div class="border-y-4 border-indigo-200 border-y-indigo-900 m-4">Border Vertical (Top and Bottom)</div>
+        <div class="border-x-4 border-indigo-200 border-x-indigo-900 m-4">Border Horizontal (Left and Right)</div>
+    </div>
 </body>
 </html>
