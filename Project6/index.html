@@ -16,6 +16,7 @@
         <div class="w-2 h-8 border-6 rounded-xl bg-indigo-500 basis-1/2">03</div>
     </div>
 
+    <!-- Flex-direction -->
     <p class="font-semibold text-center mt-5">Flex-direction</p>
     <ul>
         <li>
@@ -51,5 +52,216 @@
             </div>
         </li>
     </ul>
+
+    <!-- Flex : Initial, flex-1 and Auto -->
+    <p class="font-bold text-center">Flex</p>
+    <ul>
+        <li>
+            <p class="font-semibold text-center">Flex-initial : It allows items to shrink but not to grow</p>
+            <div class="flex items-center justify-center">
+                <div class="flex-none w-14 h-10 bg-red-500 m-2 flex items-center justify-center">01</div>
+                <div class="flex-initial w-64 h-12 bg-green-500 m-2 flex items-center justify-center">02</div>
+                <div class="flex-initial w-32 h-12 bg-blue-500 m-2 flex items-center justify-center">03</div>
+            </div>
+        </li>
+        <li>
+            <p class="font-semibold text-center">Flex-1 : It allows items to grow an shrink as needed.</p>
+            <div class="flex items-center justify-center">
+                <div class="flex-none w-14 h-10 bg-red-500 m-2 flex items-center justify-center">01</div>
+                <div class="flex-1 w-64 h-12 bg-green-500 m-2 flex items-center justify-center">02</div>
+                <div class="flex-1 w-32 h-12 bg-blue-500 m-2 flex items-center justify-center">03</div>
+            </div>
+        </li>
+        <li>
+            <p class="font-semibold text-center">Flex-auto : It allows items to grow and shrink automatically.</p>
+            <div class="flex items-center justify-center">
+                <div class="flex-none w-14 h-10 bg-red-500 m-2 flex items-center justify-center">01</div>
+                <div class="flex-auto w-64 h-12 bg-green-500 m-2 flex items-center justify-center">02</div>
+                <div class="flex-auto w-32 h-12 bg-blue-500 m-2 flex items-center justify-center">03</div>
+            </div>
+        </li>
+    </ul>
+
+    <!-- Flex : grow -->
+    <p class="font-bold text-center">Flex-grow</p>
+    <ul>
+        <li>
+            <p class="font-semibold text-center">Basic usage : Grow to fill any available space</p>
+            <div class="flex items-center justify-center">
+                <div class="flex-none w-14 h-14 bg-blue-500 flex items-center justify-center">01</div>
+                <div class="grow h-14 bg-yellow-500 flex items-center justify-center">02</div>
+                <div class="flex-none w-14 h-14 bg-indigo-500 flex items-center justify-center">03</div>
+            </div>
+        </li>
+        <li>
+            <p class="font-semibold text-center">Dont grow : use grow-0 to prevent a flex items from growing</p>
+            <div class="flex items-center justify-center">
+                <div class="grow h-12 bg-red-500 flex items-center justify-center">01</div>
+                <div class="grow-0 h-12 bg-green-500 flex items-center justify-center">02</div>
+                <div class="grow h-12 bg-blue-500 flex items-center justify-center">03</div>
+            </div>
+        </li>
+    </ul>
+
+    <!-- Flex : Shrink -->
+    <p class="font-bold text-center">Flex : Shrink</p>
+    <ul>
+        <li>
+            <p class="font-semibold text-center">Shrink Example</p>
+            <div class="flex items-center justify-center">
+                <div class="flex-none w-14 h-14 bg-red-500 flex items-center justify-center">01</div>
+                <div class="shrink w-64 h-14 bg-green-500 flex items-center justify-center">02</div>
+                <div class="flex-none w-14 h-14 bg-blue-500 flex items-center justify-center">03</div>
+            </div>
+        </li>
+        <li>
+            <p class="font-semibold text-center">Dont Shrink</p>
+            <div class="flex items-center justify-center">
+                <div class="flex-1 w-14 h-14 bg-rose-500 flex items-center justify-center">01</div>
+                <div class="shrink-0 w-64 h-14 bg-slate-500 flex items-center justify-center">02</div>
+                <div class="flex-1 w-14 h-14 bg-indigo-500 flex items-center justify-center">03</div>
+            </div>
+        </li>
+    </ul>
+
+    <!-- Order -->
+    <p class="font-bold text-center">Order : Controlling the order of flex and grid items</p>
+    <ul>
+        <li>
+            <p class="font-semibold text-center">Ordering flex and grid items</p>
+            <div class="flex justify-between">
+                <div class="order-last w-14 h-14 bg-red-500 flex items-center justify-center m-2">01</div>
+                <div class="w-14 h-14 bg-green-500 flex items-center justify-center m-2">02</div>
+                <div class="w-14 h-14 bg-blue-500 flex items-center justify-center m-2">03</div>
+            </div>
+        </li>
+        <li>
+            <p class="font-semibold text-center">Using negative value</p>
+            <div class="flex items-center justify-center">
+                <div class="-order-1 w-14 h-14 bg-slate-500 flex items-center justify-center m-2">01</div>
+                <div class="w-14 h-14 bg-green-500 flex items-center justify-center m-2">02</div>
+                <div class="w-14 h-14 bg-blue-500 flex items-center justify-center m-2">03</div>
+            </div>
+        </li>
+    </ul>
+    <hr><br>
+
+    <!-- Grid Template Columns -->
+    <p class="font-bold text-center">Specifying the columns in a grid</p>
+    <div class="flex items-center justify-center">
+        <div class="grid grid-cols-4 gap-4">
+            <div class="w-12 h-12 bg-rose-500 flex items-center justify-center rounded-lg">01</div>
+            <div class="w-12 h-12 bg-rose-500 flex items-center justify-center rounded-lg">02</div>
+            <div class="w-12 h-12 bg-rose-500 flex items-center justify-center rounded-lg">03</div>
+            <div class="w-12 h-12 bg-rose-500 flex items-center justify-center rounded-lg">04</div>
+            <div class="w-12 h-12 bg-rose-500 flex items-center justify-center rounded-lg">05</div>
+            <div class="w-12 h-12 bg-rose-500 flex items-center justify-center rounded-lg">06</div>
+            <div class="w-12 h-12 bg-rose-500 flex items-center justify-center rounded-lg">07</div>
+            <div class="w-12 h-12 bg-rose-500 flex items-center justify-center rounded-lg">08</div>
+            <div class="w-12 h-12 bg-rose-500 flex items-center justify-center rounded-lg">09</div>
+        </div>
+    </div>
+
+    <!-- Sub-grid -->
+    <p class="font-bold text-center">Subgrid</p>
+    <div class="flex items-center justify-center">
+        <div class="grid grid-cols-4 gap-4">
+            <div class="w-12 h-12 bg-indigo-500 flex items-center justify-center rounded-lg">01</div>
+            <div class="w-12 h-12 bg-indigo-500 flex items-center justify-center rounded-lg">02</div>
+            <div class="w-12 h-12 bg-indigo-500 flex items-center justify-center rounded-lg">03</div>
+            <div class="w-12 h-12 bg-indigo-500 flex items-center justify-center rounded-lg">04</div>
+            <div class="w-12 h-12 bg-indigo-500 flex items-center justify-center rounded-lg">05</div>
+            <div class="grid grid-cols-subgrid gap-4 col-span-3">
+                <div class="col-start-2 w-12 h-12 bg-rose-500 flex items-center justify-center rounded-lg">06</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grid Column Start/End -->
+    <p class="font-bold text-center">Grid Column Start/End : Spanning Columns</p>
+    <div class="flex items-center justify-evenly">
+        <div class="grid grid-cols-3 gap-4">
+            <div class="w-12 h-12 bg-indigo-600 flex items-center justify-center">01</div>
+            <div class="w-12 h-12 bg-indigo-600 flex items-center justify-center">02</div>
+            <div class="w-12 h-12 bg-indigo-600 flex items-center justify-center">03</div>
+            <div class="col-span-2 w-12 h-12 bg-rose-600 flex items-center justify-center">04</div>
+            <div class="w-12 h-12 bg-indigo-600 flex items-center justify-center">05</div>
+            <div class="w-12 h-12 bg-indigo-600 flex items-center justify-center">06</div>
+            <div class="col-span-2 w-12 h-12 bg-rose-600 flex items-center justify-center">07</div>
+        </div>
+
+        <div class="grid grid-cols-6 gap-4">
+            <div class="col-span-4 col-start-2 w-12 h-12 bg-yellow-400 flex items-center justify-center">01</div>
+            <div class="col-start-1 col-end-3 w-12 h-12 bg-yellow-400 flex items-center justify-center">02</div>
+            <div class="col-end-7 col-span-2 w-12 h-12 bg-yellow-400 flex items-center justify-center">03</div>
+            <div class="col-start-1 col-end-7 w-12 h-12 bg-yellow-400 flex items-center justify-center">04</div>
+        </div>
+    </div> 
+    <hr><br>
+
+    <!-- Grid Template Rows -->
+    <p class="font-bold text-center">Specifying the rows in a grid</p>
+    <div class="flex items-center justify-center">
+        <div class="grid grid-rows-4 grid-flow-col gap-4">
+            <div class="w-12 h-12 bg-rose-300 flex items-center justify-center rounded-md">01</div>
+            <div class="w-12 h-12 bg-rose-300 flex items-center justify-center rounded-md">02</div>
+            <div class="w-12 h-12 bg-rose-300 flex items-center justify-center rounded-md">03</div>
+            <div class="w-12 h-12 bg-rose-300 flex items-center justify-center rounded-md">04</div>
+            <div class="w-12 h-12 bg-rose-300 flex items-center justify-center rounded-md">05</div>
+            <div class="w-12 h-12 bg-rose-300 flex items-center justify-center rounded-md">06</div>
+            <div class="w-12 h-12 bg-rose-300 flex items-center justify-center rounded-md">07</div>
+            <div class="w-12 h-12 bg-rose-300 flex items-center justify-center rounded-md">08</div>
+            <div class="w-12 h-12 bg-rose-300 flex items-center justify-center rounded-md">09</div>
+        </div>
+    </div>
+
+    <!-- Subgrid -->
+    <p class="font-bold text-center">Grid Template Rows : Subgrid</p>
+    <div class="flex items-center justify-center">
+        <div class="grid grid-rows-4 grid-flow-col gap-4">
+            <div class="w-12 h-12 bg-gray-900 text-white flex items-center justify-center rounded-md">01</div>
+            <div class="w-12 h-12 bg-gray-900 text-white flex items-center justify-center rounded-md">02</div>
+            <div class="w-12 h-12 bg-gray-900 text-white flex items-center justify-center rounded-md">03</div>
+            <div class="w-12 h-12 bg-gray-900 text-white flex items-center justify-center rounded-md">04</div>
+            <div class="w-12 h-12 bg-gray-900 text-white flex items-center justify-center rounded-md">05</div>
+            <div class="grid grid-rows-subgrid gap-4 row-span-3">
+                <div class="row-start-2 w-12 h-12 bg-gray-900 text-white flex items-center justify-center rounded-md">06</div>
+            </div>
+            <div class="w-12 h-12 bg-gray-900 text-white flex items-center justify-center rounded-md">07</div>
+            <div class="w-12 h-12 bg-gray-900 text-white flex items-center justify-center rounded-md">08</div>
+            <div class="w-12 h-12 bg-gray-900 text-white flex items-center justify-center rounded-md">09</div>
+            <div class="w-12 h-12 bg-gray-900 text-white flex items-center justify-center rounded-md">10</div>
+        </div>
+    </div>
+    
+    <!-- Grid Rows Start/End -->
+    <p class="font-bold text-center">Grid Row Start/End : Spannig rows</p>
+    <div class="flex items-center justify-center">
+        <div class="grid grid-rows-3 grid-flow-col gap-4">
+            <div class="row-span-3 w-12 h-12 bg-slate-700 text-white flex items-center justify-center rounded-full">01</div>
+            <div class="col-span-2 w-12 h-12 bg-slate-700 text-white flex items-center justify-center rounded-full">02</div>
+            <div class="row-span-2 w-12 h-12 bg-slate-700 text-white flex items-center justify-center rounded-full">03</div>
+        </div>
+    </div>
+
+    <p class="font-bold text-center">Starting and Endling lines</p>
+    <div class="flex items-center justify-center">
+        <div class="grid grid-rows-3 grid-flow-col gap-4">
+            <div class="row-start-2 row-span-2 w-12 h-12 bg-purple-700 text-white flex items-center justify-center rounded-lg">01</div>
+            <div class="row-end-3 row-span-2 w-12 h-12 bg-purple-700 text-white flex items-center justify-center rounded-lg">02</div>
+            <div class="row-start-1 row-end-4 w-12 h-12 bg-purple-700 text-white flex items-center justify-center rounded-lg">03</div>
+        </div>
+    </div>
+
+    <p class="font-bold text-center">Controlling grid element placement</p>
+    <div class="flex items-center justify-center">
+        <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3">
+            <div class="col-span-2 w-12 h-12 bg-violet-600 flex items-center justify-center rounded-sm">01</div>
+            <div class="col-span-2 w-12 h-12 bg-violet-600 flex items-center justify-center rounded-sm">02</div>
+            <div class="w-12 h-12 bg-violet-600 flex items-center justify-center rounded-sm">03</div>
+            <div class="w-12 h-12 bg-violet-600 flex items-center justify-center rounded-sm">04</div>
+            <div class="w-12 h-12 bg-violet-600 flex items-center justify-center rounded-sm">05</div>
+        </div>
+    </div>
 </body>
-</html>
+</html> 
