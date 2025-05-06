@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox & Grid : Part2</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <h1 class="text-emerald-600 font-bold text-center">Hello CSS</h1>
+
+    <!-- Gap : Utilities for controlling gutters between grid and flexbox items -->
+    <p class="font-bold text-center m-2">Settings the gap between the elements</p>
+    <div class="flex items-center justify-center mt-5">
+        <div class="grid grid-cols-2 gap-4">
+            <div class="w-20 h-20 bg-rose-300 flex items-center justify-center rounded-lg">01</div>
+            <div class="w-20 h-20 bg-rose-300 flex items-center justify-center rounded-lg">02</div>
+            <div class="w-20 h-20 bg-rose-300 flex items-center justify-center rounded-lg">03</div>
+            <div class="w-20 h-20 bg-rose-300 flex items-center justify-center rounded-lg">04</div>
+        </div>
+    </div>
+
+    <p class="font-bold text-center m-2">Changing row and column gaps independently</p>
+    <div class="flex items-center justify-center mt-5">
+        <div class="grid gap-x-8 gap-y-4 grid-cols-3">
+            <div class="w-12 h-12 bg-slate-700 text-white flex items-center justify-center">01</div>
+            <div class="w-12 h-12 bg-slate-700 text-white flex items-center justify-center">02</div>
+            <div class="w-12 h-12 bg-slate-700 text-white flex items-center justify-center">03</div>
+            <div class="w-12 h-12 bg-slate-700 text-white flex items-center justify-center">04</div>
+            <div class="w-12 h-12 bg-slate-700 text-white flex items-center justify-center">05</div>
+            <div class="w-12 h-12 bg-slate-700 text-white flex items-center justify-center">06</div>
+            <div class="w-12 h-12 bg-slate-700 text-white flex items-center justify-center">07</div>
+            <div class="w-12 h-12 bg-slate-700 text-white flex items-center justify-center">08</div>
+            <div class="w-12 h-12 bg-slate-700 text-white flex items-center justify-center">09</div>
+        </div>
+    </div>
+    <hr><br>
+
+    <!-- Justify-content : Utilities for controlling how flex and grid items are positioned along a containers main axis -->
+    <p class="font-bold text-center">Justify-content : Start</p>
+    <div class=" bg-rose-500">
+        <div class="flex justify-start">
+            <div class="w-12 h-12 bg-indigo-700 flex items-center justify-center rounded-md m-2">01</div>
+            <div class="w-12 h-12 bg-indigo-700 flex items-center justify-center rounded-md m-2">02</div>
+            <div class="w-12 h-12 bg-indigo-700 flex items-center justify-center rounded-md m-2">03</div>
+            <div class="w-12 h-12 bg-indigo-700 flex items-center justify-center rounded-md m-2">04</div>
+        </div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Justify-content : Center</p>
+    <div class="bg-green-600">
+        <div class="flex justify-center">
+            <div class="w-12 h-12 bg-red-500 flex items-center justify-center m-2">01</div>
+            <div class="w-12 h-12 bg-red-500 flex items-center justify-center m-2">02</div>
+            <div class="w-12 h-12 bg-red-500 flex items-center justify-center m-2">03</div>
+            <div class="w-12 h-12 bg-red-500 flex items-center justify-center m-2">04</div>
+        </div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Justify-content : end</p>
+    <div class="bg-yellow-500">
+        <div class="flex justify-end">
+            <div class="w-12 h-12 bg-black text-white flex items-center justify-center m-2">01</div>
+            <div class="w-12 h-12 bg-black text-white flex items-center justify-center m-2">02</div>
+            <div class="w-12 h-12 bg-black text-white flex items-center justify-center m-2">03</div>
+            <div class="w-12 h-12 bg-black text-white flex items-center justify-center m-2">04</div>
+        </div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Justify-content : Space-between </p>
+    <div class="bg-indigo-500">
+        <div class="flex justify-between">
+            <div class="w-12 h-12 bg-rose-400 text-white flex items-center justify-center m-2">01</div>
+            <div class="w-12 h-12 bg-rose-400 text-white flex items-center justify-center m-2">02</div>
+            <div class="w-12 h-12 bg-rose-400 text-white flex items-center justify-center m-2">03</div>
+            <div class="w-12 h-12 bg-rose-400 text-white flex items-center justify-center m-2">04</div>
+        </div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Justify-content : space-around</p>
+    <div class="bg-red-500">
+        <div class="flex justify-around">
+            <div class="w-12 h-12 bg-yellow-500 text-white flex items-center justify-center m-2">01</div>
+            <div class="w-12 h-12 bg-yellow-500 text-white flex items-center justify-center m-2">02</div>
+            <div class="w-12 h-12 bg-yellow-500 text-white flex items-center justify-center m-2">03</div>
+            <div class="w-12 h-12 bg-yellow-500 text-white flex items-center justify-center m-2">04</div>
+        </div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Justify-content : space-evenly</p>
+    <div class="bg-yellow-500">
+        <div class="flex justify-evenly">
+            <div class="w-12 h-12 bg-red-500 text-white flex items-center justify-center m-2">01</div>
+            <div class="w-12 h-12 bg-red-500 text-white flex items-center justify-center m-2">02</div>
+            <div class="w-12 h-12 bg-red-500 text-white flex items-center justify-center m-2">03</div>
+            <div class="w-12 h-12 bg-red-500 text-white flex items-center justify-center m-2">04</div>
+        </div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Justify-content : stretch</p>
+    <div class="bg-red-500">
+        <div class="grid grid-flow-col justify-stretch">
+            <div class="w-12 h-12 bg-indigo-500 text-white flex items-center justify-center m-2">01</div>
+            <div class="w-12 h-12 bg-indigo-500 text-white flex items-center justify-center m-2">02</div>
+            <div class="w-12 h-12 bg-indigo-500 text-white flex items-center justify-center m-2">03</div>
+            <div class="w-12 h-12 bg-indigo-500 text-white flex items-center justify-center m-2">04</div>
+        </div>
+    </div>
+    <hr><br>
+
+    <!-- Justify-items : Utilities for controlling how grid items are aligned along their inline axis -->
+    <p class="font-bold text-center">Justify-items : start</p>
+    <div class="bg-gray-800">
+        <div class="grid grid-cols-3 justify-items-start gap-4">
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">01</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">02</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">03</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">04</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">05</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">06</div>
+        </div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">justify-items : end</p>
+    <div class="bg-gray-800">
+        <div class="grid grid-cols-3 justify-items-end gap-4">
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">01</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">02</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">03</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">04</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">05</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">06</div>
+        </div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">justify-items : center</p>
+    <div class="bg-gray-800">
+        <div class="grid grid-cols-3 justify-items-center gap-4">
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">01</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">02</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">03</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">04</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">05</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">06</div>
+        </div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">justify-items : stretch</p>
+    <div class="bg-gray-800">
+        <div class="grid grid-cols-3 justify-items-stretch gap-4">
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">01</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">02</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">03</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">04</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">05</div>
+            <div class="w-12 h-12 bg-white text-black flex items-center justify-center m-2">06</div>
+        </div>
+    </div>
+    <hr><br>
+
+    <!-- Justify-self : Utilities for controlling how an individual grid item is aligned along its inline axis -->
+    <p class="font-bold text-center">Justify-self : auto</p>
+    <div class="grid grid-cols-3 gap-4 justify-items-stretch p-8 bg-gray-900 min-h-screen">
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">01</div>
+        <div class="bg-pink-500 justify-self-auto text-white font-bold text-center py-4 rounded-lg">02</div>
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">03</div>
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">04</div>
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">05</div>
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">06</div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Justify-self : start</p>
+    <div class="grid grid-cols-3 gap-4 justify-items-stretch p-8 bg-gray-900 min-h-screen">
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">01</div>
+        <div class="bg-pink-500 justify-self-start text-white font-bold text-center py-4 rounded-lg">02</div>
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">03</div>
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">04</div>
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">05</div>
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">06</div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Justify-self : center</p>
+    <div class="grid grid-cols-3 gap-4 justify-items-stretch p-8 bg-gray-900 min-h-screen">
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">01</div>
+        <div class="bg-pink-500 justify-self-center text-white font-bold text-center py-4 rounded-lg">02</div>
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">03</div>
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">04</div>
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">05</div>
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">06</div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Justify-self : end</p>
+    <div class="grid grid-cols-3 gap-4 justify-items-stretch p-8 bg-gray-900 min-h-screen">
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">01</div>
+        <div class="bg-pink-500 justify-self-end text-white font-bold text-center py-4 rounded-lg">02</div>
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">03</div>
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">04</div>
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">05</div>
+        <div class="bg-pink-700 text-white font-bold text-center py-4 rounded-lg">06</div>
+    </div>
+    <hr><br>
+
+    <!-- Align Content : Utilities for controlling how rows are positioned in multi-row flex and grid containers -->
+    <p class="font-bold text-center">Align-content : content-start</p>
+    <div class="h-56 grid grid-cols-3 bg-gray-900 gap-4 content-start">
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">01</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">02</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">03</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">04</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">05</div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Align-content : content-center</p>
+    <div class="h-56 grid grid-cols-3 bg-gray-900 gap-4 content-center">
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">01</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">02</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">03</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">04</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">05</div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Align-content : content-end</p>
+    <div class="h-56 grid grid-cols-3 bg-gray-900 gap-4 content-end">
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">01</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">02</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">03</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">04</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">05</div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Align-content : content-between</p>
+    <div class="h-56 grid grid-cols-3 bg-gray-900 gap-4 content-between">
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">01</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">02</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">03</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">04</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">05</div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Align-content : content-around</p>
+    <div class="h-56 grid grid-cols-3 bg-gray-900 gap-4 content-center">
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">01</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">02</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">03</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">04</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">05</div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Align-content : content-evenly</p>
+    <div class="h-56 grid grid-cols-3 bg-gray-900 gap-4 content-evenly">
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">01</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">02</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">03</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">04</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">05</div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Align-content : content-stretch</p>
+    <div class="h-56 grid grid-cols-3 bg-gray-900 gap-4 content-stretch">
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">01</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">02</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">03</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">04</div>
+        <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center">05</div>
+    </div>
+    <hr><br>
+
+    <!-- Align-items : Utilities for controlling how flex and grid items are positioned along a containers cross axis -->
+    <p class="font-bold text-center">Align-items : flex-starts</p>
+    <div class="flex items-start bg-green-700">
+        <div class="w-12 h-12 bg-black text-white flex items-center justify-center py-4 m-2">01</div>
+        <div class="w-12 h-12 bg-black text-white flex items-center justify-center py-12 m-2">02</div>
+        <div class="w-12 h-12 bg-black text-white flex items-center justify-center py-8 m-2">03</div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Align-items : flex-center</p>
+    <div class="flex items-center bg-green-700">
+        <div class="w-12 h-12 bg-black text-white flex items-center justify-center py-4 m-2">01</div>
+        <div class="w-12 h-12 bg-black text-white flex items-center justify-center py-12 m-2">02</div>
+        <div class="w-12 h-12 bg-black text-white flex items-center justify-center py-8 m-2">03</div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Align-items : flex-end</p>
+    <div class="flex items-end bg-green-700">
+        <div class="w-12 h-12 bg-black text-white flex items-center justify-center py-4 m-2">01</div>
+        <div class="w-12 h-12 bg-black text-white flex items-center justify-center py-12 m-2">02</div>
+        <div class="w-12 h-12 bg-black text-white flex items-center justify-center py-8 m-2">03</div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Align-items : flex-baseline</p>
+    <div class="flex items-baseline bg-green-700">
+        <div class="w-12 h-12 bg-black text-white flex items-center justify-center py-4 m-2">01</div>
+        <div class="w-12 h-12 bg-black text-white flex items-center justify-center py-12 m-2">02</div>
+        <div class="w-12 h-12 bg-black text-white flex items-center justify-center py-8 m-2">03</div>
+    </div>
+    <hr><br>
+
+    <!-- Align-self : Utilities for controlling how an individual flex or grid item is positioned along its containers cross axis -->
+    <p class="font-bold text-center">Align-self : auto</p>
+    <div class="flex items-stretch bg-slate-900 h-32">
+        <div class="w-12 h-12 bg-purple-500 flex items-center justify-center m-2">01</div>
+        <div class="w-12 h-12 self-auto bg-purple-500 flex items-center justify-center m-2">02</div>
+        <div class="w-12 h-12 bg-purple-500 flex items-center justify-center m-2">03</div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Align-self : start</p>
+    <div class="flex items-stretch bg-slate-900 h-32">
+        <div class="w-12 h-12 bg-purple-500 flex items-center justify-center m-2">01</div>
+        <div class="w-12 h-12 self-start bg-purple-500 flex items-center justify-center m-2">02</div>
+        <div class="w-12 h-12 bg-purple-500 flex items-center justify-center m-2">03</div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Align-self : center</p>
+    <div class="flex items-stretch bg-slate-900 h-32">
+        <div class="w-12 h-12 bg-purple-500 flex items-center justify-center m-2">01</div>
+        <div class="w-12 h-12 self-center bg-purple-500 flex items-center justify-center m-2">02</div>
+        <div class="w-12 h-12 bg-purple-500 flex items-center justify-center m-2">03</div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Align-self : end</p>
+    <div class="flex items-stretch bg-slate-900 h-32">
+        <div class="w-12 h-12 bg-purple-500 flex items-center justify-center m-2">01</div>
+        <div class="w-12 h-12 self-end bg-purple-500 flex items-center justify-center m-2">02</div>
+        <div class="w-12 h-12 bg-purple-500 flex items-center justify-center m-2">03</div>
+    </div>
+    <hr>
+    <hr><br>
+
+    <!-- Place-content : Utilities for controlling how content is justified and aligned at the same time -->
+    <p class="font-bold text-center">Place-content : center</p>
+    <div class="flex items-center justify-center">
+        <div class="grid grid-rows-3 grid-cols-2 gap-4 place-content-center h-96 bg-slate-200">
+            <div class="w-20 h-20 bg-rose-500 flex items-center justify-center rounded-lg">01</div>
+            <div class="w-20 h-20 bg-rose-500 flex items-center justify-center rounded-lg">02</div>
+            <div class="w-20 h-20 bg-rose-500 flex items-center justify-center rounded-lg">03</div>
+            <div class="w-20 h-20 bg-rose-500 flex items-center justify-center rounded-lg">04</div>
+        </div>
+    </div>
+    <br>
+
+    <p class="font-bold text-center">Place-content : start</p>
+    <div class="flex items-center justify-center">
+        <div class="grid grid-rows-3 grid-cols-2 gap-4 place-content-start h-96 bg-slate-200">
+            <div class="w-20 h-20 bg-rose-500 flex items-center justify-center rounded-lg">01</div>
+            <div class="w-20 h-20 bg-rose-500 flex items-center justify-center rounded-lg">02</div>
+            <div class="w-20 h-20 bg-rose-500 flex items-center justify-center rounded-lg">03</div>
+            <div class="w-20 h-20 bg-rose-500 flex items-center justify-center rounded-lg">04</div>
+        </div>
+    </div>
+
+</body>
+</html>
