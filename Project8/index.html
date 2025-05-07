@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwindcss : Tables</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <h2 class="text-red-700 text-center font-semibold mt-3">Tailwindcss : Tables</h2>
+
+    <ul>
+        <li class="grid place-content-center">
+            <p class="font-bold text-center mb-2">Border-collapse</p>
+            <table class="border-collapse border border-slate-500">
+                <thead>
+                    <tr class="text-center">
+                        <th class="border border-slate-600">State</th>
+                        <th class="border border-slate-600">City</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td class="border border-slate-600">Maharashtra</td>
+                        <td class="border border-slate-600">Navi-Mumbai</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-slate-600">Uttar-Pradesh</td>
+                        <td class="border border-slate-600">Lucknow</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-slate-600">Delhi</td>
+                        <td class="border border-slate-600">New-Delhi</td>
+                    </tr>
+                </tbody>
+            </table>
+        </li>
+        <li class="grid place-content-center">
+            <p class="font-bold text-center mt-3 mb-2">Border-separate</p>
+            <table class="border-separate border border-slate-500 hover:border-collapse">
+                <thead>
+                    <tr class="text-center">
+                        <th class="border border-slate-600">State</th>
+                        <th class="border border-slate-600">City</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td class="border border-slate-600">Maharashtra</td>
+                        <td class="border border-slate-600">Mumbai</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-slate-600">Gujarat</td>
+                        <td class="border border-slate-600">Ahemdabad</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-slate-600">Madhya-Pradesh</td>
+                        <td class="border border-slate-600">Bhopal</td>
+                    </tr>
+                </tbody>
+            </table>
+        </li>
+        <li class="grid place-content-center">
+            <p class="font-bold text-center mt-5 mb-3">Border-spacing</p>
+            <table class="border-separate border border-spacing-2 border-slate-500 hover:border-collapse">
+                <thead>
+                    <tr class="text-center">
+                        <th class="border border-slate-600">State</th>
+                        <th class="border border-slate-600">City</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td class="border border-slate-600">Maharashtra</td>
+                        <td class="border border-slate-600">Navi-Mumbai</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-slate-600">Uttar-Pradesh</td>
+                        <td class="border border-slate-600">Lucknow</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-slate-600">Delhi</td>
+                        <td class="border border-slate-600">New-Delhi</td>
+                    </tr>
+                </tbody>
+            </table>
+        </li>
+        <li class="grid place-content-center">
+            <p class="font-bold text-center mt-3 mb-5">Table Layout : table-auto</p>
+            <table class="table-auto  border">
+                <thead>
+                  <tr>
+                    <th>Song</th>
+                    <th>Artist</th>
+                    <th>Year</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+                    <td>Malcolm Lockyer</td>
+                    <td>1961</td>
+                  </tr>
+                  <tr>
+                    <td>Witchy Woman</td>
+                    <td>The Eagles</td>
+                    <td>1972</td>
+                  </tr>
+                  <tr>
+                    <td>Shining Star</td>
+                    <td>Earth, Wind, and Fire</td>
+                    <td>1975</td>
+                  </tr>
+                </tbody>
+              </table>
+        </li>
+        <li class="grid place-content-center">
+            <p class="font-bold text-center mt-3 mb-5">Table Layout : table-fixed </p>
+            <table class="table-fixed border">
+                <thead>
+                  <tr>
+                    <th>Song</th>
+                    <th>Artist</th>
+                    <th>Year</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+                    <td>Malcolm Lockyer</td>
+                    <td>1961</td>
+                  </tr>
+                  <tr>
+                    <td>Witchy Woman</td>
+                    <td>The Eagles</td>
+                    <td>1972</td>
+                  </tr>
+                  <tr>
+                    <td>Shining Star</td>
+                    <td>Earth, Wind, and Fire</td>
+                    <td>1975</td>
+                  </tr>
+                </tbody>
+              </table>
+        </li>
+        <li class="grid place-content-center">
+            <p class="font-bold text-center mt-3 mb-5">Table Layout : Caption -> Caption-top</p>
+            <table class="border border-collapse border-slate-600">
+                <caption class="caption-top font-semibold hover:caption-bottom">Table 1.1: Professional Wrestlers and their Signature moves</caption>
+                <thead>
+                    <tr class="text-center">
+                        <th class="border border-slate-600">Wrestler</th>
+                        <th class="border border-slate-600">Moves</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td class="border border-slate-600">"Stone Cold" Steve Austin</td>
+                        <td class="border border-slate-600">Stone cold stunner</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-slate-600">The rock</td>
+                        <td class="border border-slate-600">Rock's Bottom, peoples hand</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-slate-600">Randy Orton , The viper</td>
+                        <td class="border border-slate-600">RKO</td>
+                    </tr>
+                </tbody>
+            </table>
+        </li>
+        <li class="grid place-content-center">
+            <p class="font-bold text-center mt-3 mb-5">Table Layout : Caption -> Caption-bottom</p>
+            <table class="border border-collapse border-slate-600">
+                <caption class="caption-bottom font-semibold hover:caption-top">Table 1.2: Professional Wrestlers and their Signature moves</caption>
+                <thead>
+                    <tr class="text-center">
+                        <th class="border border-slate-600">Wrestler</th>
+                        <th class="border border-slate-600">Moves</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td class="border border-slate-600">Goldberg</td>
+                        <td class="border border-slate-600">Spear</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-slate-600">The Undertaker</td>
+                        <td class="border border-slate-600">Chokeslam</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-slate-600">Brock Lesnar</td>
+                        <td class="border border-slate-600">Suplex city</td>
+                    </tr>
+                </tbody>
+            </table>
+        </li>
+    </ul>
+
+</body>
+</html>
