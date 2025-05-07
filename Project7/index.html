@@ -352,14 +352,12 @@
 
     <!-- Place-content : Utilities for controlling how content is justified and aligned at the same time -->
     <p class="font-bold text-center">Place-content : center</p>
-    <div class="flex items-center justify-center">
-        <div class="grid grid-rows-3 grid-cols-2 gap-4 place-content-center h-96 bg-slate-200">
-            <div class="w-20 h-20 bg-rose-500 flex items-center justify-center rounded-lg">01</div>
-            <div class="w-20 h-20 bg-rose-500 flex items-center justify-center rounded-lg">02</div>
-            <div class="w-20 h-20 bg-rose-500 flex items-center justify-center rounded-lg">03</div>
-            <div class="w-20 h-20 bg-rose-500 flex items-center justify-center rounded-lg">04</div>
-        </div>
-    </div>
+    <div class="grid grid-cols-2 gap-4 place-content-center h-96 w-full max-w-xl mx-auto bg-blue-200 rounded-lg border border-blue-400">
+        <div class="w-20 h-20 bg-blue-500 text-white flex items-center justify-center rounded">01</div>
+        <div class="w-20 h-20 bg-blue-500 text-white flex items-center justify-center rounded">02</div>
+        <div class="w-20 h-20 bg-blue-500 text-white flex items-center justify-center rounded">03</div>
+        <div class="w-20 h-20 bg-blue-500 text-white flex items-center justify-center rounded">04</div>
+      </div>
     <br>
 
     <p class="font-bold text-center">Place-content : start</p>
